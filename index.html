@@ -154,10 +154,11 @@
     <h1>InkJeli is Coming</h1>
     <p>The first-ever social media platform for tattoo artist and enthusiast. Get ready to ink the world.</p>
     
-    <div class="email-signup">
-        <input type="email" placeholder="Enter your email" required>
-        <button>Notify Me</button>
-    </div>
+    <form class="email-signup" name="notify" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="notify">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Notify Me</button>
+    </form>
     
     <div class="social-links">
         <a href="#" target="_blank">Instagram</a>
